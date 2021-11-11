@@ -1,0 +1,41 @@
+// HEADER
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+
+    .logo {
+        height: 10rem;
+        position: relative;
+        left: -40px;
+    }
+
+    .apply {
+
+        button {
+        width: 10rem;
+        height: 4rem;
+        color: black;
+        background-color: #f39c12;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        font-size: 1rem;
+        }
+    }
+}
+
+nav {
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style-type: none;
+        text-transform: uppercase;
+
+    }
+}
