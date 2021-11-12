@@ -50,6 +50,14 @@ nav .nav-list {
   text-transform: uppercase;
 }
 
+nav .nav-list a:hover {
+  border-bottom: 3px solid #f39c12;
+}
+
+nav .nav-list .active {
+  border-bottom: 3px solid #f39c12;
+}
+
 .footer-container {
   background-color: #212329;
   padding: 4rem 0 4rem 0;
