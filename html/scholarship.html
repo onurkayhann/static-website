@@ -36,26 +36,54 @@
         </ul>
       </nav>
       <article>
-        <header class="header-article">
-          <h2>Konstnärsnämnden</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-            dignissimos modi possimus a quas repellat, quibusdam consectetur
-            incidunt officiis impedit est illo quos unde qui molestiae dolorum
-            fugit quia! Repellendus!
-          </p>
         </header>
-        <section class="article-card">
-          <h2>Konstnärsguiden</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            iste nostrum inventore
-          </p>
-          <img src="#" class="article-img" alt="Bild på tavla" />
-        </section>
-        <section class="article-card">
-          <h2>Konstärers ekonomiska och sociala villkor</h2>
-          <img src="#" class="article-img" alt="Bild på konstnär" />
+        <section class="form">
+          <h2>Sök stipender</h2>
+          <div class="form-container">
+            <div class="title">Sök stipendier</div>
+            <form action="#">
+              <div class="user-details">
+                <div class="input-box">
+                  <label for="artistry">Ange konstnärskategori:</label>
+                  <input list="type-of-art" id="artistry" name="artistry" required="">
+                  <datalist id="type-of-art">
+                    <option value="Bild och form"></option>
+                    <option value="Dans och cirkus"></option>
+                    <option value="Film"></option>
+                    <option value="Musik"></option>
+                    <option value="Teater"></option>
+                    <option value="Kulturbryggan"></option>
+                  </datalist>
+      
+                  <div class="details">
+                    <label for="details">Förnamn *</label>
+                    <input type="text" placeholder="Förnamn" required="">
+                  </div>
+                  <div class="details">
+                    <label for="details">Efternamn *</label>
+                    <input type="text" placeholder="Efternamn" required="">
+                  </div>
+                  <div class="details">
+                    <label for="pnr">Personnummer *</label>
+                    <input type="text" name="pnr" placeholder="YYYYMMDD-XXXX" required="">
+                  </div>
+                  <div class="details">
+                    <label for="phone">Telefonnummer *</label>
+                    <input type="tel" name="phone" placeholder="Fyll i ditt telefonnummer" required="">
+                  </div>
+                  <div class="details">
+                    <label for="email">E-postadress *</label>
+                    <input type="email" name="email" placeholder="E-postadress" required="">
+                  </div>  
+                  <label form="text">Sammanfattning av ansökan (ange ex. syfte och mål, max 300 tecken)* </label>      
+                  <textarea id="story" name="story" rows="5" cols="43">            </textarea>
+      
+              <div class="button">
+                <input type="submit" value="Skicka in!">
+              </div>
+      
+            
+          </div>
         </section>
       </article>
       <aside>
@@ -63,10 +91,7 @@
         <section>
           <h3>28 november 13:00</h3>
           <p class="publiceriat">Publicerat: 2021-11-05</p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            fugiat.
-          </p>
+
         </section>
         <section>
           <h3>1 december 15:00</h3>
