@@ -70,6 +70,13 @@ header {
 aside {
   color: white;
   width: 20%;
+
+nav .nav-list a:hover {
+  border-bottom: 3px solid #f39c12;
+}
+
+nav .nav-list .active {
+  border-bottom: 3px solid #f39c12;
 }
 
 .footer-container {

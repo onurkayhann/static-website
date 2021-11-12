@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>konstnärsnämnden.se</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <section>
+          <img
+            src="assets/logo.png"
+            class="logo"
+            alt="Konstnärsnämnden logga"
+          />
+        </section>
+        <section class="apply">
+          <h1>Konstnärsnämnden</h1>
+          <button class="button">Sök stipendium</button>
+        </section>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <h2>Navigation/kategorier</h2>
+        <ul>
+          <li><a href="/html/news.html">Nyheter</a></li>
+          <li><a href="/html/about.html">Om konstnärsnämnden</a></li>
+          <li><a href="/html/scholarship.html">Stipendier och bidrag</a></li>
+          <li><a href="/html/international.html">Internationellt</a></li>
+          <li><a href="/html/investigation.html">Analys och utredning</a></li>
+          <li><a href="/html/links.html">Länkar</a></li>
+        </ul>
+      </nav>
+      <article>
+        </header>
+        <section class="form">
+          <h2>Sök stipender</h2>
+          <p>Gör din ansökan genom att fylla i formuläret och bifoga ansökningshandlingarna. Fält markerade med * är obligatoriska</p>
+          <div class="form-container">
+            <div class="title">Sök stipendier</div>
+            <form action="#">
+              <div class="user-details">
+                <div class="input-box">
+                  <label for="artistry">Ange konstnärskategori*:</label>
+                  <input list="type-of-art" id="artistry" name="artistry" required alt="obligatoriskt">
+                  <datalist id="type-of-art">
+                    <option value="Bild och form"></option>
+                    <option value="Dans och cirkus"></option>
+                    <option value="Film"></option>
+                    <option value="Musik"></option>
+                    <option value="Teater"></option>
+                    <option value="Kulturbryggan"></option>
+                  </datalist>
+      
+                  <div class="details">
+                    <label for="details">Förnamn *</label>
+                    <input type="text" placeholder="Förnamn" required alt="obligatoriskt">
+                  </div>
+                  <div class="details">
+                    <label for="details">Efternamn *</label>
+                    <input type="text" placeholder="Efternamn" required alt="obligatoriskt">
+                  </div>
+                  <div class="details">
+                    <label for="pnr">Personnummer *</label>
+                    <input type="text" name="pnr" placeholder="YYYYMMDD-XXXX" required alt="obligatoriskt">
+                  </div>
+                  <div class="details">
+                    <label for="phone">Telefonnummer *</label>
+                    <input type="tel" name="phone" placeholder="Fyll i ditt telefonnummer" required alt="obligatoriskt">
+                  </div>
+                  <div class="details">
+                    <label for="email">E-postadress *</label>
+                    <input type="email" name="email" placeholder="E-postadress" required alt="obligatoriskt">
+                  </div>  
+                  <div>
+                    <label form="text">Sammanfattning av ansökan (ange ex. syfte och mål, max 300 tecken) </label>      
+                    <textarea id="story" name="story" rows="5" cols="43"></textarea>
+                  </div>
+                  <div>
+                    <label form="text">Bifoga din ansökan *</label>
+                    <input type="file"
+                     id="files" name="file" required alt="obligatoriskt">
+                  </div>
+              <div class="button">
+                <input type="submit" value="Skicka in!">
+              </div>
+      
+            
+          </div>
+        </section>
+      </article>
+      <aside>
+        <h2>Kalendarium</h2>
+        <section>
+          <h3>28 november 13:00</h3>
+          <p class="publiceriat">Publicerat: 2021-11-05</p>
+
+        </section>
+        <section>
+          <h3>1 december 15:00</h3>
+          <p class="publicerat">Publicerat: 2021-11-05</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+            fugiat.
+          </p>
+        </section>
+        <section>
+          <h3>5 december 21:30</h3>
+          <p class="publicerat">Publicerat: 2021-11-05</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+            fugiat.
+          </p>
+        </section>
+        <section>
+          <h3>10 december 09:00</h3>
+          <p class="publicerat">Publicerat: 2021-11-05</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+            fugiat.
+          </p>
+        </section>
+        <a href="#">Hela kalendariumet --> </a>
+      </aside>
+    </main>
+    <div class="footer-container">
+      <div class="footer">
+        <section class="footer-heading footer-1">
+          <h4>Konstnärsnämnden</h4>
+          <a href="/html/mission.html">Regeringsuppdrag</a>
+          <a href="#">Organisation</a>
+          <a href="/html/equality.html">Jämnställdhet</a>
+          <a href="/html/publications.html">Publikationer</a>
+        </section>
+        <section class="footer-heading footer-2">
+          <h4>Kontakta oss</h4>
+          <a href="/html/contact.html">Kontakt</a>
+          <a href="#">Personal</a>
+          <a href="#">Lediga tjänster</a>
+        </section>
+        <section class="footer-heading footer-3">
+          <h4>Sociala medier</h4>
+          <a href="https://www.facebook.com/profile.php?id=100064917125295"
+            >Facebook</a
+          >
+          <a href="https://twitter.com/konstnarsnmnden">Twitter</a>
+          <a href="https://www.youtube.com/channel/UCbKIiLUE8sUCcySkzrVxTuQ"
+            >Youtube</a
+          >
+        </section>
+        <section class="footer-email-form">
+          <h4>Nyhetsbrev</h4>
+          <input type="email" placeholder="E-postadress" id="footer-email" />
+          <input type="submit" value="Registrera dig" id="footer-email-btn" />
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
