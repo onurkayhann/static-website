@@ -5,7 +5,7 @@ header {
   flex-direction: column;
   height: 100vh;
 
-  background-image: url("/assets/background.jpeg");
+  background-image: url("/assets/background.jgeg");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -41,21 +41,25 @@ header {
 aside {
     color: white;
     width: 20%;
+    background: rgba(0, 0, 0, .7)
 }
 
 nav {
   max-width: 1200px;
   margin-bottom: 2rem;
 
+  ul {
+    list-style-type: none;
+  }
+
   .nav-list {
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+    justify-content: space-between;    
     text-transform: uppercase;
 
     a {
-      list-style-type: none;
       text-decoration: none;
+      color: inherit;    
     }
 
     a:hover {
