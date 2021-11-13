@@ -1,22 +1,21 @@
 main {
+  color: white;
 
-    color: white;
+  article {
+    width: 75%;
+  }
 
-    article {
-        width: 75%;
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .article-card {
+      background-color: rgb(89, 89, 89);
+      width: 30rem;
+      height: 12rem;
+      margin: 2rem;
+      padding: 12px;
     }
-
-    .cards {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .article-card {
-            background-color: rgb(89, 89, 89);
-            width: 30rem;
-            height: 12rem;
-            margin: 2rem;
-            padding: 12px;
-        }
-    }
+  }
 }
