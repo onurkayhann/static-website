@@ -1,23 +1,26 @@
 // HEADER
+
 header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
 
-  background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url("../background.jpeg");
+  background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url("/assets/background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 
   .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 4rem 0 4rem;
+    margin: 0 5rem;
 
+    
     .logo {
-      height: 10rem;
+      height: 8rem;
       position: relative;
       left: -40px;
       filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
@@ -26,7 +29,7 @@ header {
     .apply {
       button {
         width: 10rem;
-        height: 4rem;
+        height: 3rem;
         color: black;
         background-color: #f39c12;
         border: none;
@@ -42,12 +45,17 @@ header {
     .nav-list {
       padding: 0 4rem 0 4rem;
       margin-bottom: 4rem;
-      width: 100%;
+      width: 80%;
       display: flex;
+      flex-direction: column; //navigation column eller row
       justify-content: space-between;
       list-style-type: none;
       text-transform: uppercase;
       color: white;
+
+      li {
+        margin-bottom: 10px;
+      }
     
 
       a {
@@ -69,10 +77,13 @@ header {
   aside {
     color: white;
     width: 20%;
-    background: rgba(0, 0, 0, .7);
-    padding: 12px;
+    background: rgba(0, 0, 0, .8);
+    padding: 1rem 1rem 1rem 1rem;
     position: relative;
+    top: -260px;
     left: 75%;
+    border-radius: 4px;
+
 
     a {
       color:#f39c12;
