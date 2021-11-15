@@ -1,16 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700&display=swap");
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-image: url("/assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 1100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .header-container .logo {
   height: 10rem;
   position: relative;
   left: -40px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
+          filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
 }
 
 .header-container .apply button {
@@ -24,14 +48,21 @@
   font-size: 1rem;
 }
 
-nav {
-  max-width: 1200px;
+.header-container nav {
   margin-bottom: 2rem;
 }
 
 nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-container .nav-list > li > a {
+  color: white;
   text-decoration: none;
   list-style-type: none;
   text-transform: uppercase;
@@ -59,6 +90,17 @@ nav .nav-list {
   transition: 0.5s;
   line-height: 30px;
   width: 300px;
+  
+aside {
+  color: white;
+  width: 20%;
+
+nav .nav-list a:hover {
+  border-bottom: 3px solid #f39c12;
+}
+
+nav .nav-list .active {
+  border-bottom: 3px solid #f39c12;
 }
 
 .footer-container {
@@ -141,19 +183,20 @@ nav .nav-list {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 main {

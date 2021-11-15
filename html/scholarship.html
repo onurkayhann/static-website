@@ -39,13 +39,14 @@
         </header>
         <section class="form">
           <h2>Sök stipender</h2>
+          <p>Gör din ansökan genom att fylla i formuläret och bifoga ansökningshandlingarna. Fält markerade med * är obligatoriska</p>
           <div class="form-container">
             <div class="title">Sök stipendier</div>
             <form action="#">
               <div class="user-details">
                 <div class="input-box">
-                  <label for="artistry">Ange konstnärskategori:</label>
-                  <input list="type-of-art" id="artistry" name="artistry" required="">
+                  <label for="artistry">Ange konstnärskategori*:</label>
+                  <input list="type-of-art" id="artistry" name="artistry" required alt="obligatoriskt">
                   <datalist id="type-of-art">
                     <option value="Bild och form"></option>
                     <option value="Dans och cirkus"></option>
@@ -57,27 +58,33 @@
       
                   <div class="details">
                     <label for="details">Förnamn *</label>
-                    <input type="text" placeholder="Förnamn" required="">
+                    <input type="text" placeholder="Förnamn" required alt="obligatoriskt">
                   </div>
                   <div class="details">
                     <label for="details">Efternamn *</label>
-                    <input type="text" placeholder="Efternamn" required="">
+                    <input type="text" placeholder="Efternamn" required alt="obligatoriskt">
                   </div>
                   <div class="details">
                     <label for="pnr">Personnummer *</label>
-                    <input type="text" name="pnr" placeholder="YYYYMMDD-XXXX" required="">
+                    <input type="text" name="pnr" placeholder="YYYYMMDD-XXXX" required alt="obligatoriskt">
                   </div>
                   <div class="details">
                     <label for="phone">Telefonnummer *</label>
-                    <input type="tel" name="phone" placeholder="Fyll i ditt telefonnummer" required="">
+                    <input type="tel" name="phone" placeholder="Fyll i ditt telefonnummer" required alt="obligatoriskt">
                   </div>
                   <div class="details">
                     <label for="email">E-postadress *</label>
-                    <input type="email" name="email" placeholder="E-postadress" required="">
+                    <input type="email" name="email" placeholder="E-postadress" required alt="obligatoriskt">
                   </div>  
-                  <label form="text">Sammanfattning av ansökan (ange ex. syfte och mål, max 300 tecken)* </label>      
-                  <textarea id="story" name="story" rows="5" cols="43">            </textarea>
-      
+                  <div>
+                    <label form="text">Sammanfattning av ansökan (ange ex. syfte och mål, max 300 tecken) </label>      
+                    <textarea id="story" name="story" rows="5" cols="43"></textarea>
+                  </div>
+                  <div>
+                    <label form="text">Bifoga din ansökan *</label>
+                    <input type="file"
+                     id="files" name="file" required alt="obligatoriskt">
+                  </div>
               <div class="button">
                 <input type="submit" value="Skicka in!">
               </div>
