@@ -39,3 +39,24 @@ nav {
 
     }
 }
+.search-box {
+    background: #e4d6c2;
+    padding: 10px;
+    border-radius: 20px;
+}
+.search-button {
+    background: #665b4c(206, 134, 134);
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.search-txt {
+    border: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    transition: 0.5s;
+    line-height: 30px;
+    width: 300px;
+}
