@@ -17,8 +17,6 @@ header {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -52,6 +50,9 @@ header {
 
 .header-container nav {
   margin-bottom: 2rem;
+}
+
+nav .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,6 +68,29 @@ header {
   text-transform: uppercase;
 }
 
+.search-box {
+  background: #e4d6c2;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.search-button {
+  background: #665b4c 206, 134, 134;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  color: black;
+  font-size: 14px;
+  transition: 0.5s;
+  line-height: 30px;
+  width: 300px;
+  
 aside {
   color: white;
   width: 20%;
@@ -91,25 +115,15 @@ nav .nav-list .active {
   height: 50vh;
   background-color: #212329;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
 .footer-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-right: 4rem;
 }
 
@@ -126,7 +140,6 @@ nav .nav-list .active {
 
 .footer-heading a:hover {
   color: white;
-  -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
 }
 
@@ -142,18 +155,6 @@ nav .nav-list .active {
   padding-left: 0.5rem;
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-#footer-email::-webkit-input-placeholder {
-  color: #b1b1b1;
-}
-
-#footer-email:-ms-input-placeholder {
-  color: #b1b1b1;
-}
-
-#footer-email::-ms-input-placeholder {
-  color: #b1b1b1;
 }
 
 #footer-email::placeholder {
@@ -172,7 +173,6 @@ nav .nav-list .active {
 #footer-email-btn:hover {
   cursor: pointer;
   background-color: #4d4d4d;
-  -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
 
@@ -181,9 +181,9 @@ nav .nav-list .active {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -196,19 +196,17 @@ body {
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   color: white;
+  background-image: url("/assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 
 main article {
@@ -231,15 +229,9 @@ main aside {
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards .article-card {
