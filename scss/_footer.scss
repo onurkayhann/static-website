@@ -1,6 +1,8 @@
 // FOOTER
+@import './colors';
+
 .footer-container {
-    background-color: #212329;
+    background-color: $background-footer;
     padding: 4rem 0 4rem 0;
     margin-top: 4rem;
     width: 100%;
@@ -9,8 +11,8 @@
 .footer {
     width: 90%;
     height: 50vh;
-    background-color: #212329;
-    color: #fff;
+    background-color: $background-footer;
+    color: $base-light;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -29,13 +31,13 @@
 }
 
 .footer-heading a {
-    color: rgb(131, 131, 131);
+    color: $base-darker;
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
 
 .footer-heading a:hover {
-    color: rgb(255, 255, 255);
+    color: $base-light;
     transition: 0.1s ease-out;
 }
 
@@ -54,7 +56,7 @@
 }
 
 #footer-email::placeholder {
-    color: #b1b1b1;
+    color: $base-darker;
 }
 
 #footer-email-btn {
@@ -68,6 +70,6 @@
 
 #footer-email-btn:hover {
     cursor: pointer;
-    background-color: rgb(77, 77, 77);
+    background-color: $base-darker;
     transition: 0.2s ease-out;
 }   

@@ -1,3 +1,5 @@
+@import './colors';
+
 main {
   display: flex;
   flex-direction: row;
@@ -12,7 +14,7 @@ main {
       justify-content: space-between;
       list-style-type: none;
       text-transform: uppercase;
-      color: black;
+      color: $base-black;
 
       li {
         margin-bottom: 10px;
@@ -26,16 +28,16 @@ main {
       }
 
       a:hover {
-        border-bottom: 3px solid #f39c12;
+        border-bottom: 3px solid $accent-color;
       }
 
       .active {
-        border-bottom: 3px solid #f39c12;
+        border-bottom: 3px solid $accent-color;
       }
     }
 
     article {
-      color: black;
+      color: $base-black;
       margin-left: 6rem;
 
       .cards {
@@ -44,7 +46,7 @@ main {
         justify-content: center;
 
         .article-card {
-          background-color: rgb(89, 89, 89);
+          background-color: $base-darker;
           width: 30rem;
           height: 12rem;
           margin: 2rem;

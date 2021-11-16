@@ -9,15 +9,6 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 90vh;
-<<<<<<< HEAD
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("/assets/background.jpeg");
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/assets/background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-=======
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
 }
 
 header .header-container {
@@ -45,10 +36,8 @@ header .header-container .logo {
           filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
 }
 
-<<<<<<< HEAD
-=======
 header .header-container .search-box {
-  background: #e4d6c2;
+  background: #ffffff;
   padding: 10px;
   border-radius: 20px;
 }
@@ -64,7 +53,7 @@ header .header-container .search-box .search-button {
 header .header-container .search-box .search-txt {
   border: none;
   background: none;
-  color: black;
+  color: #212329;
   font-size: 14px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -72,11 +61,10 @@ header .header-container .search-box .search-txt {
   width: 300px;
 }
 
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
 header .header-container .apply button {
   width: 10rem;
   height: 3rem;
-  color: black;
+  color: #212329;
   background-color: #f39c12;
   border: none;
   border-radius: 4px;
@@ -84,13 +72,6 @@ header .header-container .apply button {
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
-header nav aside {
-  color: white;
-  width: 20%;
-  background: rgba(0, 0, 0, 0.7);
-}
-
 header nav .nav-list {
   padding: 0 4rem 0 4rem;
   margin-bottom: 4rem;
@@ -107,46 +88,7 @@ header nav .nav-list {
           justify-content: space-between;
   list-style-type: none;
   text-transform: uppercase;
-  color: white;
-}
-
-header nav .nav-list li {
-  margin-bottom: 10px;
-}
-
-header nav .nav-list a {
-  list-style-type: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-header nav .nav-list a:hover {
-  border-bottom: 3px solid #f39c12;
-}
-
-header nav .nav-list .active {
-  border-bottom: 3px solid #f39c12;
-}
-
-header .search-box {
-=======
-header nav .nav-list {
-  padding: 0 4rem 0 4rem;
-  margin-bottom: 4rem;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style-type: none;
-  text-transform: uppercase;
-  color: white;
+  color: #ffffff;
 }
 
 header nav .nav-list li {
@@ -168,7 +110,7 @@ header nav .nav-list .active {
 }
 
 header aside {
-  color: white;
+  color: #ffffff;
   width: 20%;
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem 1rem 1rem 1rem;
@@ -230,67 +172,39 @@ header .hero-img {
 }
 
 .header-main .header-container .search-box {
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
-  background: #e4d6c2;
+  background: #ffffff;
   padding: 10px;
   border-radius: 20px;
 }
 
-<<<<<<< HEAD
-header .search-button {
-=======
 .header-main .header-container .search-box .search-button {
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
-  background: #665b4c 206, 134, 134;
+  /*background: #665b4c(206, 134, 134);*/
   float: right;
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
 
-<<<<<<< HEAD
-header .search-txt {
-=======
 .header-main .header-container .search-box .search-txt {
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
   border: none;
   background: none;
-  color: black;
+  color: #212329;
   font-size: 14px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   line-height: 30px;
   width: 300px;
-<<<<<<< HEAD
-}
-
-header aside {
-  color: white;
-  width: 20%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1rem 1rem 1rem 1rem;
-  position: relative;
-  top: -260px;
-  left: 75%;
-  border-radius: 4px;
-  line-height: 1.8rem;
-}
-
-header aside a {
-  color: #f39c12;
-=======
 }
 
 .header-main .header-container .apply button {
   width: 10rem;
   height: 3rem;
-  color: black;
+  color: #212329;
   background-color: #f39c12;
   border: none;
   border-radius: 4px;
   outline: none;
   font-size: 1rem;
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
 }
 
 .footer-container {
@@ -304,7 +218,7 @@ header aside a {
   width: 90%;
   height: 50vh;
   background-color: #212329;
-  color: #fff;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,7 +253,7 @@ header aside a {
 }
 
 .footer-heading a:hover {
-  color: white;
+  color: #ffffff;
   -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
 }
@@ -359,19 +273,19 @@ header aside a {
 }
 
 #footer-email::-webkit-input-placeholder {
-  color: #b1b1b1;
+  color: #838383;
 }
 
 #footer-email:-ms-input-placeholder {
-  color: #b1b1b1;
+  color: #838383;
 }
 
 #footer-email::-ms-input-placeholder {
-  color: #b1b1b1;
+  color: #838383;
 }
 
 #footer-email::placeholder {
-  color: #b1b1b1;
+  color: #838383;
 }
 
 #footer-email-btn {
@@ -385,7 +299,7 @@ header aside a {
 
 #footer-email-btn:hover {
   cursor: pointer;
-  background-color: #4d4d4d;
+  background-color: #838383;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
@@ -415,16 +329,6 @@ body {
 }
 
 main {
-<<<<<<< HEAD
-  color: white;
-}
-
-main article {
-  width: 75%;
-}
-
-main .cards {
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,7 +354,7 @@ main nav .nav-list-main {
           justify-content: space-between;
   list-style-type: none;
   text-transform: uppercase;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 main nav .nav-list-main li {
@@ -473,12 +377,11 @@ main nav .nav-list-main .active {
 }
 
 main nav article {
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
   margin-left: 6rem;
 }
 
 main nav article .cards {
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,12 +393,8 @@ main nav article .cards {
           justify-content: center;
 }
 
-<<<<<<< HEAD
-main .cards .article-card {
-=======
 main nav article .cards .article-card {
->>>>>>> 1d7b51edc669bbdb1d0d40e69303d6b3a7ab19f4
-  background-color: #595959;
+  background-color: #838383;
   width: 30rem;
   height: 12rem;
   margin: 2rem;
