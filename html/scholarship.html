@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>konstnärsnämnden.se</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <section>
-          <img
-            src="assets/logo.png"
-            class="logo"
-            alt="Konstnärsnämnden logga"
-          />
-        </section>
-        <section class="apply">
-          <h1>Konstnärsnämnden</h1>
-          <button class="button">Sök stipendium</button>
-        </section>
-      </div>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-main">
+            <div class="header-container">
+                <!-- logo -->
+                <section>
+                    <a href="../index.html">
+                        <img src="/assets/logo _GRAY.png" class="logo" alt="Konstnärsnämndens logo" />
+                    </a>
+                </section>
+                <!-- Search bar -->
+                <section class="search-box">
+                    <input class="search-txt" type="text" placeholder=" Sök på Konstnärsnämden">
+                    <img class="search-button" src="/assets/search.png">
+                </section>
+                <!-- Apply button -->
+                <section class="apply">
+                    <a id="scholarship" href="/html/scholarship.html">
+                        <button class="button">Sök Stipendium</button>
+                </section>
+            </div>
     </header>
+
+    <!-- MAIN -->
     <main>
-      <nav>
-        <h2>Navigation/kategorier</h2>
-        <ul>
-          <li><a href="/html/news.html">Nyheter</a></li>
-          <li><a href="/html/about.html">Om konstnärsnämnden</a></li>
-          <li><a href="/html/scholarship.html">Stipendier och bidrag</a></li>
-          <li><a href="/html/international.html">Internationellt</a></li>
-          <li><a href="/html/investigation.html">Analys och utredning</a></li>
-          <li><a href="/html/links.html">Länkar</a></li>
-        </ul>
-      </nav>
-      <article>
+        <!-- Top navbar -->
+        <nav>
+            <ul class="nav-list-main">
+                <li><a href="/html/news.html" class="nav-link">Nyheter</a></li>
+                <li>
+                    <a href="/html/about.html" class="nav-link active">Om konstnärsnämnden</a>
+                </li>
+                <li>
+                    <a href="/html/scholarship.html" class="nav-link">Stipendier och bidrag</a>
+                </li>
+                <li>
+                    <a href="/html/international.html" class="nav-link">Internationellt</a>
+                </li>
+                <li>
+                    <a href="/html/investigation.html" class="nav-link">Analys och utredning</a>
+                </li>
+                <li><a href="/html/links.html" class="nav-link">Länkar</a></li>
+            </ul>
+        </nav>
+                
+        <article>
         </header>
         <section class="form">
           <h2>Sök stipender</h2>
@@ -85,79 +104,65 @@
                     <input type="file"
                      id="files" name="file" required alt="obligatoriskt">
                   </div>
-              <div class="button">
-                <input type="submit" value="Skicka in!">
+              <div class="apply">
+                <input class="button" type="submit" value="Skicka in!">
               </div>
       
             
           </div>
         </section>
       </article>
-      <aside>
-        <h2>Kalendarium</h2>
-        <section>
-          <h3>28 november 13:00</h3>
-          <p class="publiceriat">Publicerat: 2021-11-05</p>
+    
 
-        </section>
-        <section>
-          <h3>1 december 15:00</h3>
-          <p class="publicerat">Publicerat: 2021-11-05</p>
+        <!-- <div class="cards">
+        <section class="article-card">
+          <h2>Konstnärsguiden</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            fugiat.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
+            iste nostrum inventore
           </p>
+          <img src="#" class="article-img" alt="Bild på tavla" />
         </section>
-        <section>
-          <h3>5 december 21:30</h3>
-          <p class="publicerat">Publicerat: 2021-11-05</p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            fugiat.
-          </p>
+        <section class="article-card">
+          <h2>Konstärers ekonomiska och sociala villkor</h2>
+          <img src="#" class="article-img" alt="Bild på konstnär" />
         </section>
-        <section>
-          <h3>10 december 09:00</h3>
-          <p class="publicerat">Publicerat: 2021-11-05</p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            fugiat.
-          </p>
-        </section>
-        <a href="#">Hela kalendariumet --> </a>
-      </aside>
+      </div> -->
     </main>
+
+    
+    <!-- FOOTER -->
+
     <div class="footer-container">
-      <div class="footer">
-        <section class="footer-heading footer-1">
-          <h4>Konstnärsnämnden</h4>
-          <a href="/html/mission.html">Regeringsuppdrag</a>
-          <a href="#">Organisation</a>
-          <a href="/html/equality.html">Jämnställdhet</a>
-          <a href="/html/publications.html">Publikationer</a>
+        <div class="footer">
+            <section class="footer-heading footer-1">
+                <h2>Konstnärsnämnden</h2>
+                <a href="/html/mission.html">Regeringsuppdrag</a>
+                <a href="#">Organisation</a>
+                <a href="/html/equality.html">Jämnställdhet</a>
+                <a href="/html/publications.html">Publikationer</a>
+            </section>
+            <section class="footer-heading footer-2">
+                <h2>Kontakta oss</h2>
+                <a href="/html/contact.html">Kontakt</a>
+                <a href="#">Personal</a>
+                <a href="#">Lediga tjänster</a>
+            </section>
+            <section class="footer-heading footer-3">
+                <h2>Sociala medier</h2>
+                <a href="https://www.facebook.com/profile.php?id=100064917125295">Facebook</a>
+                <a href="https://twitter.com/konstnarsnmnden">Twitter</a>
+                <a href="https://www.youtube.com/channel/UCbKIiLUE8sUCcySkzrVxTuQ">Youtube</a>
+            </section>
+            <section class="footer-email-form">
+                <h2>Nyhetsbrev</h2>
+                <input type="submit" value="Registrera dig" id="footer-email-btn" />
+        </div>
+        <!-- <input type="email" placeholder="E-postadress" id="footer-email" />
+        <input type="submit" value="Registrera dig" id="footer-email-btn" /> -->
         </section>
-        <section class="footer-heading footer-2">
-          <h4>Kontakta oss</h4>
-          <a href="/html/contact.html">Kontakt</a>
-          <a href="#">Personal</a>
-          <a href="#">Lediga tjänster</a>
-        </section>
-        <section class="footer-heading footer-3">
-          <h4>Sociala medier</h4>
-          <a href="https://www.facebook.com/profile.php?id=100064917125295"
-            >Facebook</a
-          >
-          <a href="https://twitter.com/konstnarsnmnden">Twitter</a>
-          <a href="https://www.youtube.com/channel/UCbKIiLUE8sUCcySkzrVxTuQ"
-            >Youtube</a
-          >
-        </section>
-        <section class="footer-email-form">
-          <h4>Nyhetsbrev</h4>
-          <input type="email" placeholder="E-postadress" id="footer-email" />
-          <input type="submit" value="Registrera dig" id="footer-email-btn" />
-        </section>
-      </div>
     </div>
-  </body>
+    </div>
+</body>
+
 </html>
