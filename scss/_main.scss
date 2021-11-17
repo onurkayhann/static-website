@@ -1,3 +1,4 @@
+
 @import './colors';
 
 main {
@@ -35,10 +36,11 @@ main {
         border-bottom: 3px solid $accent-color;
       }
     }
-
-    article {
+  }
+    /*article {
       color: $base-black;
       margin-left: 6rem;
+
 
       .cards {
         display: flex;
@@ -53,6 +55,54 @@ main {
           padding: 12px;
         }
       }
+    }*/
+  
+
+  .breadcrumbs {
+    padding-bottom: 10px;
+    display: flex;
+
+    .breadcrumbs-item {
+      display: inline-block;
+    }
+
+    .breadcrumbs-item:not(:last-of-type)::after {
+      content: '>';
+      margin: 0 5px;
+      color: $base-darker;
+    }
+
+    .breadcrumbs-link {
+      text-decoration: none;
+      color: $base-darker;
+    }
+
+    .breadcrumbs-link:hover {
+      border-bottom: 1px solid $accent-color;
+    }
+
+/*Måste ha ett referensvärde att utgå ifrån i font-weight*/    
+    .breadcrumbs-link-active {
+      color: $accent-color;
+      font-weight: 500;
+    }
+
+    .breadcrumbs-link-active:hover {
+      border-bottom: 0px;
     }
   }
+
+  p {
+    margin: 1em;
+    margin-left: 0;
+  }
+
+  .ingress{
+    font-weight: bold;
+  }
+
+  .ul-mission{
+    margin-left: 2em;
+  }
 }
+
