@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
 header {
   width: 100%;
@@ -262,7 +263,31 @@ body {
 
 main {
   display: flex;
-  flex-direction: row;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*article {
+      color: $base-black;
+      margin-left: 6rem;
+
+
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .article-card {
+          background-color: $base-darker;
+          width: 30rem;
+          height: 12rem;
+          margin: 2rem;
+          padding: 12px;
+        }
+      }
+    }*/
+
 }
 
 main nav .nav-list-main {
@@ -296,6 +321,14 @@ main nav .nav-list-main .active {
   border-bottom: 3px solid #f39c12;
 }
 
+
+main .breadcrumbs {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*Måste ha ett referensvärde att utgå ifrån i font-weight*/
+
 main nav article {
   color: rgba(0, 0, 0, 0.8);
   margin-left: 6rem;
@@ -305,13 +338,47 @@ main nav article .cards {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
-main nav article .cards .article-card {
-  background-color: #838383;
-  width: 30rem;
-  height: 12rem;
-  margin: 2rem;
-  padding: 12px;
+main .breadcrumbs .breadcrumbs-item {
+  display: inline-block;
+}
+
+main .breadcrumbs .breadcrumbs-item:not(:last-of-type)::after {
+  content: '>';
+  margin: 0 5px;
+  color: #838383;
+}
+
+main .breadcrumbs .breadcrumbs-link {
+  text-decoration: none;
+  color: #838383;
+}
+
+main .breadcrumbs .breadcrumbs-link:hover {
+  border-bottom: 1px solid #f39c12;
+}
+
+main .breadcrumbs .breadcrumbs-link-active {
+  color: #f39c12;
+  font-weight: 500;
+}
+
+main .breadcrumbs .breadcrumbs-link-active:hover {
+  border-bottom: 0px;
+}
+
+main p {
+  margin: 1em;
+  margin-left: 0;
+}
+
+main .ingress {
+  font-weight: bold;
+}
+
+main .ul-mission {
+  margin-left: 2em;
 }
 /*# sourceMappingURL=style.css.map */
