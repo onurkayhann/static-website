@@ -1,6 +1,13 @@
 // FOOTER
 @import "./colors";
 
+@mixin mobile {
+    @media (max-width: 40em){
+        @content;
+    }
+ }
+
+
 .footer-container {
   background-color: $background-footer;
   padding: 4rem 0 4rem 0;
