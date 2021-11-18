@@ -15,6 +15,9 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+}
 
 header .flex-container {
   display: -webkit-box;
@@ -43,6 +46,7 @@ header .flex-container {
 }
 
 header .header-container {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
