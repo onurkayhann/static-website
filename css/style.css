@@ -60,6 +60,9 @@ header .header-container {
   margin-top: 2rem;
   max-width: 100vw;
   padding: 10px;
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
 }
 
 @media (max-width: 40em) {
@@ -192,6 +195,7 @@ header .header-container .search-box-desktop .search-txt {
   border: none;
   background: none;
   color: #212329;
+
   font-size: 1rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -280,6 +284,7 @@ header .hero-img {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+
   height: 70vh;
 }
 
@@ -601,7 +606,7 @@ main .breadcrumbs .breadcrumbs-item {
 }
 
 main .breadcrumbs .breadcrumbs-item:not(:last-of-type)::after {
-  content: '>';
+  content: ">";
   margin: 0 5px;
   color: #838383;
 }
@@ -703,5 +708,14 @@ main .ingress {
 
 main .ul-mission {
   margin-left: 2em;
+}
+
+main .links li {
+  list-style-type: none;
+}
+
+main .links li a {
+  color: #f39c12;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
