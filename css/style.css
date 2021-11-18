@@ -16,7 +16,6 @@ header {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
 }
 
 header .flex-container {
@@ -368,7 +367,6 @@ header .hero-img {
 .footer-container {
   background-color: #212329;
   padding: 4rem 0 4rem 0;
-  margin-top: 4rem;
   width: 100%;
 }
 
@@ -591,6 +589,68 @@ main nav .nav-list-main a:hover {
 
 main nav .nav-list-main .active {
   border-bottom: 3px solid #f39c12;
+}
+
+main .about-container {
+  width: 100%;
+  background-color: #e7a03c;
+  color: #ffffff;
+}
+
+main .about-container .art-img {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("/assets/art2.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/assets/art2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .about-container .art-img .section-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+main .about-container .art-img .section-about .about-text .main-btn {
+  height: 50px;
+  color: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  outline: 4px;
+  font-size: 1rem;
+  margin: 2rem 0 0 0;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+}
+
+main .about-container .art-img .section-about .about-text .main-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+main .about-container .art-img .section-about .about-logo-container {
+  width: 35%;
+}
+
+main .about-container .art-img .section-about .about-logo-container .about-logo {
+  height: 350px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
+          filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
 }
 
 main .breadcrumbs {
