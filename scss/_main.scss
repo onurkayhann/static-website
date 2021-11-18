@@ -1,5 +1,4 @@
-
-@import './colors';
+@import "./colors";
 
 main {
   display: flex;
@@ -37,7 +36,60 @@ main {
       }
     }
   }
-    /*article {
+
+  .about-container {
+    width: 100%;
+    background-color: #e7a03c;
+    color: $base-light;
+
+    .art-img {
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url("/assets/art2.jpeg");
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+
+      .section-about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+
+        .about-text {
+          .main-btn {
+            height: 50px;
+            color: #fff;
+            border: 2px solid $base_light;
+            border-radius: 20px;
+            outline: 4px;
+            font-size: 1rem;
+            margin: 2rem 0 0 0;
+            padding: 0 1rem 0 1rem;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0);
+
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.2);
+              transition: 0.2s ease-in;
+              cursor: pointer;
+            }
+          }
+        }
+        .about-logo-container {
+          width: 35%;
+          .about-logo {
+            height: 350px;
+            filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg)
+              brightness(107%) contrast(105%);
+          }
+        }
+      }
+    }
+  }
+
+  /*article {
       color: $base-black;
       margin-left: 6rem;
 
@@ -56,7 +108,6 @@ main {
         }
       }
     }*/
-  
 
   .breadcrumbs {
     padding-bottom: 10px;
@@ -67,7 +118,7 @@ main {
     }
 
     .breadcrumbs-item:not(:last-of-type)::after {
-      content: '>';
+      content: ">";
       margin: 0 5px;
       color: $base-darker;
     }
@@ -81,7 +132,7 @@ main {
       border-bottom: 1px solid $accent-color;
     }
 
-/*Måste ha ett referensvärde att utgå ifrån i font-weight*/    
+    /*Måste ha ett referensvärde att utgå ifrån i font-weight*/
     .breadcrumbs-link-active {
       color: $accent-color;
       font-weight: 500;
@@ -90,38 +141,33 @@ main {
     .breadcrumbs-link-active:hover {
       border-bottom: 0px;
     }
-
-    
   }
-  .form-container{
+  .form-container {
     max-width: 700px;
     width: 100%;
     background: white;
     padding: 25px 30px;
     border-radius: 5px;
-}
+  }
 
-.form-container .title {
+  .form-container .title {
     font-size: 25px;
     font-weight: 500;
     position: relative;
-}
+  }
 
-
-
-.form-container form .user-details{
+  .form-container form .user-details {
     display: flex;
-   /* flex-wrap: wrap;
+    /* flex-wrap: wrap;
     justify-content: space-between;*/
-
-}
-form .user-details .input-box{
+  }
+  form .user-details .input-box {
     width: calc(100% / 2 - 20px);
     margin: 20px 0 12px 0;
     margin-bottom: 15px;
-}
+  }
 
-.user-details .input-box input{
+  .user-details .input-box input {
     height: 30px;
     width: 100%;
     outline: none;
@@ -131,19 +177,19 @@ form .user-details .input-box{
     border-bottom-width: 2px;
     transition: all 0.5s ease;
     border-radius: 5px;
-}
-.user-details .input-box .details {
-   display: block;
+  }
+  .user-details .input-box .details {
+    display: block;
     font-weight: 450;
     margin-top: 7px;
     margin-bottom: 2px;
-}
+  }
 
-.user-details .input-box input:focus {
+  .user-details .input-box input:focus {
     border-color: $accent-color;
-}
+  }
 
-form .button {
+  form .button {
     height: 45px;
     margin: 45px 0;
     outline: none;
@@ -153,25 +199,22 @@ form .button {
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
+  }
 
-form .attach input {
+  form .attach input {
     border: none;
-}
+  }
 
   p {
     margin: 1em;
     margin-left: 0;
   }
 
-  .ingress{
+  .ingress {
     font-weight: bold;
   }
 
-  .ul-mission{
+  .ul-mission {
     margin-left: 2em;
   }
-
- 
 }
-
