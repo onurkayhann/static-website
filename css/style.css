@@ -490,7 +490,7 @@ main .breadcrumbs .breadcrumbs-item {
 }
 
 main .breadcrumbs .breadcrumbs-item:not(:last-of-type)::after {
-  content: '>';
+  content: ">";
   margin: 0 5px;
   color: #838383;
 }
@@ -592,5 +592,14 @@ main .ingress {
 
 main .ul-mission {
   margin-left: 2em;
+}
+
+main .links li {
+  list-style-type: none;
+}
+
+main .links li a {
+  color: #f39c12;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
