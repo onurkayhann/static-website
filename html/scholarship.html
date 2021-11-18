@@ -52,17 +52,27 @@
       </nav>
                 
         <article>
+          <div>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="../index.html">Start</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-link breadcrumbs-link-active">Stipendier och bidrag</a>
+                </li>
+            </ul>
+        </div>
         </header>
         <section class="form">
           <h2>Sök stipender</h2>
-          <p>Gör din ansökan genom att fylla i formuläret och bifoga ansökningshandlingarna. Fält markerade med * är obligatoriska</p>
+          <p>Fyll i formuläret och bifoga dina ansökningshandlingar så kontaktar vi dig. Fält markerade med * är obligatoriska</p>
           <div class="form-container">
             <div class="title">Sök stipendier</div>
             <form action="#">
               <div class="user-details">
                 <div class="input-box">
-                  <label for="artistry">Ange konstnärskategori*:</label>
-                  <input list="type-of-art" id="artistry" name="artistry" required alt="obligatoriskt">
+                  <label for="artistry">Ange konstnärskategori *:</label>
+                  <input list="type-of-art" id="artistry" name="artistry" placeholder="Välj kategori ▾" required alt="obligatoriskt">
                   <datalist id="type-of-art">
                     <option value="Bild och form"></option>
                     <option value="Dans och cirkus"></option>
@@ -86,7 +96,7 @@
                   </div>
                   <div class="details">
                     <label for="phone">Telefonnummer *</label>
-                    <input type="tel" name="phone" placeholder="Fyll i ditt telefonnummer" required alt="obligatoriskt">
+                    <input type="tel" name="phone" placeholder="Telefonnummer" required alt="obligatoriskt">
                   </div>
                   <div class="details">
                     <label for="email">E-postadress *</label>
