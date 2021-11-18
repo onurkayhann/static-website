@@ -1,18 +1,15 @@
 // FOOTER
 @import "./colors";
 
-@mixin mobile {
-    @media (max-width: 40em){
-        @content;
-    }
- }
-
-
 .footer-container {
   background-color: $background-footer;
   padding: 4rem 0 4rem 0;
   margin-top: 4rem;
   width: 100%;
+
+  @include mobile {
+    padding: 2rem 0 6rem 0;
+  }
 }
 
 .footer {
@@ -32,12 +29,22 @@
   left: -40px;
   filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg)
     brightness(107%) contrast(105%);
+
+  @include mobile {
+    height: 6rem;
+    margin-left: 2rem;
+    margin-top: -1rem;
+  }
 }
 
 .footer-heading {
   display: flex;
   flex-direction: column;
   margin-right: 4rem;
+
+  @include mobile {
+    margin-top: 1rem;
+  }
 }
 
 .footer-heading h2 {
@@ -49,6 +56,10 @@
   color: $base-darker;
   text-decoration: none;
   margin-bottom: 0.5rem;
+
+  @include mobile {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .footer-heading a:hover {
