@@ -217,4 +217,13 @@ main {
   .ul-mission {
     margin-left: 2em;
   }
+
+
+  .links li {
+    list-style-type: none;
+    a {
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
 }
