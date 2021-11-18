@@ -499,6 +499,74 @@ main .breadcrumbs .breadcrumbs-link-active:hover {
   border-bottom: 0px;
 }
 
+main .form-container {
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+main .form-container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+main .form-container form .user-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+
+main form .user-details .input-box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0 12px 0;
+  margin-bottom: 15px;
+}
+
+main .user-details .input-box input {
+  height: 30px;
+  width: 100%;
+  outline: none;
+  border: 1px solid gray;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+main .user-details .input-box .details {
+  display: block;
+  font-weight: 450;
+  margin-top: 7px;
+  margin-bottom: 2px;
+}
+
+main .user-details .input-box input:focus {
+  border-color: #f39c12;
+}
+
+main form .button {
+  height: 45px;
+  margin: 45px 0;
+  outline: none;
+  border-radius: 5px;
+  background: #f39c12;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+main form .attach input {
+  border: none;
+}
+
 main p {
   margin: 1em;
   margin-left: 0;
