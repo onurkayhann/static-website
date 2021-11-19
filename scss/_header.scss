@@ -127,7 +127,7 @@ header {
     }
 
     .search-box-desktop {
-      background: $base-light;
+      background: #ecf0f1;
       padding: 1em;
       border-radius: 20px;
       margin-right: 4rem;
@@ -289,7 +289,7 @@ header {
     }
 
     .search-box {
-      background: $dark-white;
+      // background: $dark-white;
       padding: 10px;
       border-radius: 5px;
       //margin-right: 10rem;
@@ -301,6 +301,7 @@ header {
         height: 30px;
         border-radius: 50%;
       }
+
       .search-txt {
         border: none;
         background: none;
