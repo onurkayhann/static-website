@@ -51,7 +51,7 @@ header {
     .dropdown {
       @include mobile {
         position: relative;
-        top: -326px;
+        top: -110px;
         left: 260px;
       }
     }
@@ -131,7 +131,7 @@ header {
       border-radius: 20px;
       margin-right: 4rem;
       width: 17rem;
-      height: 3rem;
+      height: 50px;
       position: relative;
       left: 10%;
 

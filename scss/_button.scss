@@ -1,0 +1,19 @@
+.main-btn {
+  height: 8rem;
+  color: #fff;
+  border: 2px solid $base_light;
+  border-radius: 20px;
+  outline: 4px;
+  font-size: 1rem;
+  margin: 0 0 0 0;
+  padding: 1.5rem 1rem 1rem 1rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+}
