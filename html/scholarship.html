@@ -53,7 +53,6 @@
         </div>
       </div>
     </div>
-    </div>
   </header>
   <!-- MAIN -->
     <main class="main-subpage">
@@ -125,8 +124,7 @@
             <div class="user-details">
               <div class="input-box">
                 <label for="artistry">Ange konstnärskategori *:</label>
-                <input list="type-of-art" type="list" id="artistry" name="artistry" placeholder="Välj kategori" required
-                  alt="obligatoriskt">
+                <input list="type-of-art" type="text" id="artistry" name="artistry" required>
                 <datalist id="type-of-art">
                   <option value="Bild och form"></option>
                   <option value="Dans och cirkus"></option>
@@ -138,32 +136,33 @@
 
                 <div class="details">
                   <label for="details">Förnamn *</label>
-                  <input type="text" placeholder="Förnamn" required alt="obligatoriskt">
+                  <input type="text" placeholder="Förnamn" required>
                 </div>
                 <div class="details">
                   <label for="details">Efternamn *</label>
-                  <input type="text" placeholder="Efternamn" required alt="obligatoriskt">
+                  <input type="text" placeholder="Efternamn" required>
                 </div>
                 <div class="details">
                   <label for="pnr">Personnummer *</label>
-                  <input type="text" name="pnr" placeholder="YYYYMMDD-XXXX" required alt="obligatoriskt">
+                  <input type="text" name="pnr" placeholder="YYYYMMDD-XXXX" required>
                 </div>
                 <div class="details">
                   <label for="phone">Telefonnummer *</label>
-                  <input type="tel" name="phone" placeholder="Telefonnummer" required alt="obligatoriskt">
+                  <input type="tel" name="phone" placeholder="Telefonnummer" required>
                 </div>
                 <div class="details">
                   <label for="email">E-postadress *</label>
-                  <input type="email" name="email" placeholder="E-postadress" required alt="obligatoriskt">
+                  <input type="email" name="email" placeholder="E-postadress" required>
                 </div>
                 <div class="details">
-                  <label id="text-story" form="text">Sammanfattning av ansökan (ange ex. syfte och mål, max 300 tecken) </label>
+                  <label id="text-story" for="text">Sammanfattning av ansökan (ange ex. syfte och mål, max 300 tecken) </label>
                   <textarea id="story" name="story" rows="5" cols="43"></textarea>
                 </div>
                 <div class="apply">
                   <input class="button" type="submit" value="Skicka in!">
                 </div>
               </div>
+            </div>
       </section>
     </article>
   </main>
