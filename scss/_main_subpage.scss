@@ -1,0 +1,23 @@
+.main-subpage {
+  display: flex;
+  flex-direction: row;
+
+  nav {
+    @include mobile {
+      display: none;
+      cursor: pointer;
+    }
+    .nav-list-main {
+      width: 20rem;
+    }
+  }
+
+  article {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+hr {
+  width: 22rem;
+}
