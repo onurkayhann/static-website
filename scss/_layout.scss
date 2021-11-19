@@ -98,6 +98,24 @@ form .attach input {
   border: none;
 }
 
+
+#type-of-art {
+  @include mobile {
+    width: 15rem;
+  }
+}
+.details {
+  @include mobile {
+    width: 13rem;
+  }
+}
+#story {
+  @include mobile {
+    width: 15rem;
+  }
+}
+
+
 p {
   margin: 1em;
   margin-left: 0;

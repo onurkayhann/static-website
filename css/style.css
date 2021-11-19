@@ -433,6 +433,12 @@ header .hero-img {
   padding-right: 16px;
 }
 
+@media (max-width: 40em) {
+  .main-subpage article {
+    line-height: 1.5rem;
+  }
+}
+
 hr {
   width: 22rem;
 }
@@ -840,6 +846,24 @@ form .button {
 
 form .attach input {
   border: none;
+}
+
+@media (max-width: 40em) {
+  #type-of-art {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .details {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 40em) {
+  #story {
+    width: 15rem;
+  }
 }
 
 p {
