@@ -410,7 +410,7 @@ header .hero-img {
   color: #f39c12;
 }
 
-.main-subpage article ul {
+.main-subpage article .links {
   list-style-type: none;
 }
 
