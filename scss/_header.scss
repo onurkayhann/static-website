@@ -40,20 +40,18 @@ header {
 
     .logo {
       height: 10rem;
-      position: relative;
-      left: -40px;
       filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg)
         brightness(107%) contrast(105%);
 
       @include mobile {
         height: 6rem;
-        margin-left: 2rem;
+        margin: -6px 0 0 40px;
       }
     }
     .dropdown {
       @include mobile {
         position: relative;
-        top: -320px;
+        top: -326px;
         left: 260px;
       }
     }
@@ -70,6 +68,10 @@ header {
         margin-left: 20px;
         height: 4rem;
         background: rgba(0, 0, 0, 0);
+      }
+
+      @include desktop {
+        display: none;
       }
 
       #burger {
@@ -198,7 +200,6 @@ header {
         border-radius: 5px;
         outline: none;
         font-size: 1.3rem;
-        margin-right: 200px;
 
         &:hover {
           background-color: $accent-color-darker;
@@ -206,7 +207,7 @@ header {
         }
 
         @include mobile {
-          margin: 4rem 0 7rem 1rem;
+          margin: 3rem 0 8rem 3rem;
           position: relative;
           top: 10rem;
         }
@@ -245,26 +246,6 @@ header {
   //     }
   //   }
   // }
-
-  aside {
-    color: $base-light;
-    max-width: 30vw;
-    margin-right: 20vw;
-    height: 40vh;
-    background: $base-black;
-    padding: 1rem 1rem 1rem 1rem;
-    position: relative;
-    top: 200px;
-    left: 75%;
-
-    border-radius: 4px;
-    line-height: 2.5rem;
-    font-size: 1.3rem;
-
-    a {
-      color: $accent-color;
-    }
-  }
 
   .hero-img {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
