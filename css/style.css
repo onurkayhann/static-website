@@ -343,6 +343,11 @@ header .hero-img {
   font-size: 1rem;
 }
 
+.news-link {
+  text-decoration: none;
+  color: #f39c12;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
