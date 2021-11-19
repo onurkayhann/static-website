@@ -88,7 +88,7 @@ header .header-container .logo {
 @media (max-width: 40em) {
   header .header-container .dropdown {
     position: relative;
-    top: -326px;
+    top: -110px;
     left: 260px;
   }
 }
@@ -172,7 +172,7 @@ header .header-container .search-box-desktop {
   border-radius: 20px;
   margin-right: 4rem;
   width: 17rem;
-  height: 3rem;
+  height: 50px;
   position: relative;
   left: 10%;
 }
@@ -341,6 +341,167 @@ header .hero-img {
   border-radius: 4px;
   outline: none;
   font-size: 1rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 40em) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 40em) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main nav .nav-list-main {
+  padding: 0 4rem 0 4rem;
+  margin-bottom: 4rem;
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main nav .nav-list-main li {
+  margin-bottom: 10px;
+  width: 14rem;
+}
+
+main nav .nav-list-main a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+main nav .nav-list-main a:hover {
+  border-bottom: 3px solid #f39c12;
+}
+
+main nav .nav-list-main .active {
+  border-bottom: 3px solid #f39c12;
+}
+
+main .about-container {
+  width: 100%;
+  background-color: #e7a03c;
+  color: #ffffff;
+}
+
+main .about-container .section-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+main .about-container .section-about .about-text .main-btn {
+  height: 50px;
+  color: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  outline: 4px;
+  font-size: 1rem;
+  margin: 2rem 0 0 0;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+}
+
+main .about-container .section-about .about-text .main-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+main .about-container .section-about .about-logo-container {
+  width: 35%;
+}
+
+main .about-container .section-about .about-logo-container .about-logo {
+  height: 350px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
+          filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
+}
+
+main .section-calendar .calendar-text {
+  width: 40%;
+}
+
+main .section-calendar aside {
+  color: #ffffff;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 1rem 1rem 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section-calendar aside .main-btn {
+  height: 50px;
+  color: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  outline: 4px;
+  font-size: 1rem;
+  margin: 2rem 0 0 20%;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+}
+
+main .section-calendar aside .main-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 .footer-container {
@@ -595,6 +756,27 @@ p {
   margin-left: 2em;
 }
 
+.main-btn {
+  height: 8rem;
+  color: #fff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  outline: 4px;
+  font-size: 1rem;
+  margin: 0 0 0 0;
+  padding: 1.5rem 1rem 1rem 1rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
 html {
   width: 100%;
 }
@@ -619,175 +801,5 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-@media (max-width: 40em) {
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (min-width: 40em) {
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-main nav .nav-list-main {
-  padding: 0 4rem 0 4rem;
-  margin-bottom: 4rem;
-  margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style-type: none;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-main nav .nav-list-main li {
-  margin-bottom: 10px;
-  width: 14rem;
-}
-
-main nav .nav-list-main a {
-  list-style-type: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-main nav .nav-list-main a:hover {
-  border-bottom: 3px solid #f39c12;
-}
-
-main nav .nav-list-main .active {
-  border-bottom: 3px solid #f39c12;
-}
-
-main .about-container {
-  width: 100%;
-  background-color: #e7a03c;
-  color: #ffffff;
-}
-
-main .about-container .section-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 4rem;
-}
-
-main .about-container .section-about .about-text .main-btn {
-  height: 50px;
-  color: #fff;
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  outline: 4px;
-  font-size: 1rem;
-  margin: 2rem 0 0 0;
-  padding: 0 1rem 0 1rem;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0);
-}
-
-main .about-container .section-about .about-text .main-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-
-main .about-container .section-about .about-logo-container {
-  width: 35%;
-}
-
-main .about-container .section-about .about-logo-container .about-logo {
-  height: 350px;
-  -webkit-filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
-          filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
-}
-
-main .section-calendar .calendar-text {
-  width: 40%;
-}
-
-main .section-calendar aside {
-  color: #ffffff;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1rem 1rem 1rem 1rem;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .section-calendar aside .main-btn {
-  height: 50px;
-  color: #fff;
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  outline: 4px;
-  font-size: 1rem;
-  margin: 2rem 0 0 20%;
-  padding: 0 1rem 0 1rem;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0);
-}
-
-main .section-calendar aside .main-btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-
-main .links li {
-  list-style-type: none;
-}
-
-main .links li a {
-  color: #f39c12;
-  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
