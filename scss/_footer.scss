@@ -14,7 +14,7 @@
 
 .footer {
   width: 90%;
-  height: 50vh;
+  height: 30vh;
   background-color: $background-footer;
   color: $base-light;
   display: flex;
@@ -98,4 +98,20 @@
   cursor: pointer;
   background-color: $base-darker;
   transition: 0.2s ease-out;
+}
+
+.ion-social-facebook {
+  color: #3b5998;
+  font-size: 1.4rem;
+  margin-right: 6px;
+}
+.ion-social-twitter {
+  color: #55acee;
+  font-size: 1.4rem;
+  margin-right: 6px;
+}
+.ion-social-youtube {
+  color: #cd201f;
+  font-size: 1.4rem;
+  margin-right: 6px;
 }
