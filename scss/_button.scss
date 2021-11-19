@@ -1,18 +1,54 @@
-.main-btn {
-  height: 8rem;
-  color: #fff;
-  border: 2px solid $base_light;
+.main-btn1 {
+  color: $base-black;
+  box-shadow: 1px 1px 1px 1px $accent-color-darker;
   border-radius: 20px;
-  outline: 4px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 0 0 0;
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1rem 2.5rem;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0);
+  background: $accent-color;
+  text-decoration: none;
+
+  @include mobile {
+    padding: 0.8rem 1.8rem;
+    cursor: none;
+  }
+
+  &:hover {
+    background-color: $accent-color-darker;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+}
+.main-btn2 {
+  color: $base-light;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  margin: 0 0 0 0;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  background: $accent-color-darker;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: $base-black;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+  
+}
+.main-btn3 {
+  color: $base-black;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  margin: 0 0 0 0;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  background: $accent-color;
   text-decoration: none;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: $accent-color-darker;
     transition: 0.2s ease-in;
     cursor: pointer;
   }

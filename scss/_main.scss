@@ -52,18 +52,30 @@ main {
     color: $base-light;
     text-align: center;
 
+    @include mobile {
+      text-align: left;
+    }
+
     .section-about {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
       padding: 4rem;
 
+      @include mobile {
+        padding: 0;
+      }
+      
       .about-text {
-        padding-right: 12rem;
-        padding-left: 12rem;
+        margin-right: 10rem;
+        margin-left: 10rem;
         line-height: 1.7rem;
         letter-spacing: 1px;
+
+        @include mobile {
+          letter-spacing: 1px;
+          padding: 2rem;
+          text-align: center;
+          margin-right: 0;
+          margin-left: 0;
+        }
 
         .main-btn {
           height: 50px;
@@ -75,7 +87,7 @@ main {
           margin: 2rem 0 0 0;
           padding: 0 1rem 0 1rem;
           cursor: pointer;
-          background: rgba(255, 255, 255, 0);
+          background: rgba(252, 46, 46, 0);
 
           &:hover {
             background-color: rgba(255, 255, 255, 0.2);
@@ -84,17 +96,21 @@ main {
           }
         }
       }
-      .about-logo-container {
-        width: 35%;
-        .about-logo {
-          height: 350px;
-          filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg)
-            brightness(107%) contrast(105%);
-        }
-        @include mobile {
-          display: none;
-        }
+      .main-btn2-edit {
+        margin-top: 2rem;
       }
+
+      // .about-logo-container {
+      //   width: 35%;
+      //   .about-logo {
+      //     height: 350px;
+      //     filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg)
+      //       brightness(107%) contrast(105%);
+      //   }
+      //   @include mobile {
+      //     display: none;
+      //   }
+      // }
     }
   }
 
@@ -132,6 +148,7 @@ main {
         margin: 0 2.8rem;
         text-align: center;
         margin-bottom: 1rem;
+
         @include mobile {
           margin: 0 2.8rem;
         }
@@ -143,7 +160,6 @@ main {
         margin-top: 3rem;
 
         @include mobile {
-          margin-left: 2.8rem;
           margin-bottom: 1rem;
           margin-top: 3rem;
         }
@@ -151,13 +167,13 @@ main {
 
       .calendar-container-4 {
         text-align: center;
-        margin-right: 19.5rem;
         margin-bottom: 3rem;
         margin-top: 2rem;
 
         @include mobile {
-          margin-right: 7.5rem;
+
           margin-bottom: 3rem;
+          margin-top: 1rem;
         }
       }
 
