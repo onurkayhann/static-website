@@ -11,7 +11,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header-main">
+    <header>
         <div class="header-container">
             <!-- logo -->
             <section>
@@ -19,20 +19,46 @@
                     <img src="/assets/logo_GRAY.png" class="logo" alt="Konstnärsnämndens logo" />
                 </a>
             </section>
-            <!-- Search bar -->
-            <section class="search-box">
+            <!--  Search box -->
+            <div class="search-box-desktop">
                 <input class="search-txt" type="text" placeholder=" Sök på Konstnärsnämden">
-                <img class="search-button" src="/assets/search.png">
-            </section>
+                <img class="search-button" src="/assets/search.png" alt="Förstoringsglas i sökruta">
+            </div>
             <!-- Apply button -->
-            <section class="apply">
-                <a id="link-apply" href="/html/scholarship.html">Sök stipendium</a>
+            <section>
+                <a class="main-btn" href="/html/scholarship.html">Sök stipendium</a>
             </section>
+            <!-- Drop down menu -->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="/assets/burger_GRAY.png" id="burger" alt="meny">
+                </button>
+                <div class="dropdown-content">
+                    <div class="search-box-navbar">
+                        <input class="search-txt" type="text" placeholder=" Sök på Konstnärsnämden">
+                        <img class="search-button" src="/assets/search.png">
+                    </div>
+                    <a href="/html/news.html" class="nav-link">Nyheter</a>
+                    <a href="/html/about.html" class="nav-link">Om konstnärsnämnden</a>
+                    <a href="/html/international.html" class="nav-link">Internationellt</a>
+                    <a href="/html/investigation.html" class="nav-link">Analys och utredning</a>
+                    <a href="/html/links.html" class="nav-link">Länkar</a>
+                    <a href="/html/calendar.html" class="nav-link">Kalendarium</a>
+                    <a href="/html/terms.html" class="nav-link">Ekonomiska villkor</a>
+                    <a href="/html/international.html" class="nav-link">Internationellt</a>
+                    <a href="/html/investigation.html" class="nav-link active">Analys och utredning</a>
+                    <a href="/html/mission.html" class="nav-link">Regeringsuppdrag</a>
+                    <a href="/html/equality.html " class="nav-link">Jämställdhet</a>
+                    <a href="/html/publications.html" class="nav-link">Publikationer</a>
+                    <a href="/html/links.html" class="nav-link">Länkar</a>
+                </div>
+            </div>
+        </div>
         </div>
     </header>
 
     <!-- MAIN -->
-    <main>
+    <main class="main-subpage">
         <!-- Top navbar -->
         <nav>
             <ul class="nav-list-main">
@@ -44,7 +70,7 @@
                 <li><a href="/html/international.html" class="nav-link">Internationellt</a></li>
                 <li><a href="/html/investigation.html" class="nav-link active">Analys och utredning</a></li>
                 <li><a href="/html/mission.html" class="nav-link">Regeringsuppdrag</a></li>
-                <li><a href="/html/equality.html " class="nav-link">Jämnställdhet</a></li>
+                <li><a href="/html/equality.html " class="nav-link">Jämställdhet</a></li>
                 <li><a href="/html/publications.html" class="nav-link">Publikationer</a></li>
                 <li><a href="/html/links.html" class="nav-link">Länkar</a></li>
             </ul>
