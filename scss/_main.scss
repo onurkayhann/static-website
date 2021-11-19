@@ -8,6 +8,10 @@ main {
     flex-direction: column;
   }
 
+  @include desktop {
+    flex-direction: column;
+  }
+
   nav {
     .nav-list-main {
       padding: 0 4rem 0 4rem;
@@ -87,15 +91,18 @@ main {
 
   // CALENDAR FRONT SECTION
   .section-calendar {
-    .hero-img {
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-        url("/assets/art.png");
+    // .hero-img {
+    //   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    //     url("/assets/art.png");
 
-      background-repeat: no-repeat;
-      background-size: cover;
-      object-fit: cover;
-      height: 90vh;
-    }
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   object-fit: cover;
+    //   height: 40vh;
+
+    //   display: flex;
+    //   justify-content: center;
+    // }
 
     .calendar-text {
       width: 40%;
@@ -103,13 +110,10 @@ main {
 
     aside {
       color: $base-light;
-      width: 18rem;
+      width: 100%;
       background: $base-black;
       padding: 1rem 1rem 1rem 1rem;
       position: relative;
-      top: 120px;
-      left: 5%;
-      border-radius: 4px;
       display: flex;
       flex-direction: column;
       justify-content: center;

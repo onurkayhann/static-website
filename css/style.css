@@ -110,6 +110,12 @@ header .header-container .dropbtn {
   }
 }
 
+@media (min-width: 40em) {
+  header .header-container .dropbtn {
+    display: none;
+  }
+}
+
 header .header-container .dropbtn #burger {
   height: 30px;
   margin-top: 20px;
@@ -235,7 +241,6 @@ header .header-container .apply button {
   border-radius: 5px;
   outline: none;
   font-size: 1.3rem;
-  margin-right: 200px;
 }
 
 header .header-container .apply button:hover {
@@ -245,29 +250,10 @@ header .header-container .apply button:hover {
 
 @media (max-width: 40em) {
   header .header-container .apply button {
-    margin: 3rem 0 8rem 1rem;
+    margin: 3rem 0 8rem 3rem;
     position: relative;
     top: 10rem;
   }
-}
-
-header aside {
-  color: #ffffff;
-  max-width: 30vw;
-  margin-right: 20vw;
-  height: 40vh;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1rem 1rem 1rem 1rem;
-  position: relative;
-  top: 200px;
-  left: 75%;
-  border-radius: 4px;
-  line-height: 2.5rem;
-  font-size: 1.3rem;
-}
-
-header aside a {
-  color: #f39c12;
 }
 
 header .hero-img {
@@ -654,6 +640,15 @@ main {
   }
 }
 
+@media (min-width: 40em) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main nav .nav-list-main {
   padding: 0 4rem 0 4rem;
   margin-bottom: 4rem;
@@ -745,29 +740,16 @@ main .about-container .section-about .about-logo-container .about-logo {
           filter: invert(100%) sepia(0%) saturate(23%) hue-rotate(19deg) brightness(107%) contrast(105%);
 }
 
-main .section-calendar .hero-img {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("/assets/art.png");
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("/assets/art.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 90vh;
-}
-
 main .section-calendar .calendar-text {
   width: 40%;
 }
 
 main .section-calendar aside {
   color: #ffffff;
-  width: 18rem;
+  width: 100%;
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem 1rem 1rem 1rem;
   position: relative;
-  top: 120px;
-  left: 5%;
-  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
