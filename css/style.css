@@ -443,6 +443,11 @@ hr {
   width: 22rem;
 }
 
+.news-link {
+  text-decoration: none;
+  color: #f39c12;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
