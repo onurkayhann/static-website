@@ -50,6 +50,7 @@ main {
     width: 100%;
     background-color: #e7a03c;
     color: $base-light;
+    text-align: center;
 
     .section-about {
       display: flex;
@@ -59,6 +60,11 @@ main {
       padding: 4rem;
 
       .about-text {
+        // padding-right: 12rem;
+        // padding-left: 12rem;
+        // line-height: 1.7rem;
+        // letter-spacing: 1px;
+
         .main-btn {
           height: 50px;
           color: #fff;
@@ -118,7 +124,41 @@ main {
       flex-direction: column;
       justify-content: center;
 
-      .main-btn {
+
+    .calendar-container-2, .calendar-container-3 {
+      margin: 0 2.8rem;
+      text-align: center; 
+      margin-bottom: 1rem;
+        @include mobile {
+          margin: 0 2.8rem;
+        }
+      }
+  
+      .calendar-container-1 {
+      text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    
+        @include mobile {
+          margin-left: 2.8rem;
+          margin-bottom: 1rem;
+          margin-top: 3rem;
+        }
+      }
+
+      .calendar-container-4 {
+        text-align: center;
+        margin-right: 19.5rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+
+        @include mobile {
+          margin-right: 7.5rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+        .main-btn {
         height: 50px;
         color: #fff;
         border: 2px solid $base_light;
@@ -139,87 +179,3 @@ main {
     }
   }
 }
-//   .form-container {
-//     max-width: 700px;
-//     width: 100%;
-//     background: white;
-//     padding: 25px 30px;
-//     border-radius: 5px;
-//   }
-
-//   .form-container .title {
-//     font-size: 25px;
-//     font-weight: 500;
-//     position: relative;
-//   }
-
-//   .form-container form .user-details {
-//     display: flex;
-//     /* flex-wrap: wrap;
-//     justify-content: space-between;*/
-//   }
-//   form .user-details .input-box {
-//     width: calc(100% / 2 - 20px);
-//     margin: 20px 0 12px 0;
-//     margin-bottom: 15px;
-//   }
-
-//   .user-details .input-box input {
-//     height: 30px;
-//     width: 100%;
-//     outline: none;
-//     border: 1px solid gray;
-//     padding-left: 15px;
-//     font-size: 16px;
-//     border-bottom-width: 2px;
-//     transition: all 0.5s ease;
-//     border-radius: 5px;
-//   }
-//   .user-details .input-box .details {
-//     display: block;
-//     font-weight: 450;
-//     margin-top: 7px;
-//     margin-bottom: 2px;
-//   }
-
-//   .user-details .input-box input:focus {
-//     border-color: $accent-color;
-//   }
-
-//   form .button {
-//     height: 45px;
-//     margin: 45px 0;
-//     outline: none;
-//     border-radius: 5px;
-//     background: $accent-color;
-//     color: $base-black;
-//     font-weight: 700;
-//     letter-spacing: 1px;
-//     text-transform: uppercase;
-//   }
-
-//   form .attach input {
-//     border: none;
-//   }
-
-//   p {
-//     margin: 1em;
-//     margin-left: 0;
-//   }
-
-//   .ingress {
-//     font-weight: bold;
-//   }
-
-//   .ul-mission {
-//     margin-left: 2em;
-//   }
-
-//   .links li {
-//     list-style-type: none;
-//     a {
-//       color: $accent-color;
-//       text-decoration: none;
-//     }
-//   }
-// }
