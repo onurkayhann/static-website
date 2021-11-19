@@ -5,7 +5,7 @@
   background-color: $background-footer;
   padding: 4rem 0 4rem 0;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
   @include mobile {
     padding: 2rem 0 6rem 0;
     height: 80vh;
@@ -14,7 +14,7 @@
 
 .footer {
   width: 90%;
-  height: 30vh;
+  height: 40vh;
   background-color: $background-footer;
   color: $base-light;
   display: flex;
