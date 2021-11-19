@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #F8F8FF;
 }
 
 /*@mixin mobile {
@@ -554,7 +555,7 @@ main .section-calendar aside .main-btn:hover {
   background-color: #212329;
   padding: 4rem 0 4rem 0;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 @media (max-width: 40em) {
@@ -566,7 +567,7 @@ main .section-calendar aside .main-btn:hover {
 
 .footer {
   width: 90%;
-  height: 30vh;
+  height: 40vh;
   background-color: #212329;
   color: #ffffff;
   display: flex;
@@ -716,7 +717,7 @@ main .section-calendar aside .main-btn:hover {
 .form-container {
   max-width: 700px;
   width: 100%;
-  background: white;
+  background: #F8F8FF;
   padding: 25px 30px;
   border-radius: 5px;
 }
