@@ -781,4 +781,13 @@ main .section-calendar aside .main-btn:hover {
   transition: 0.2s ease-in;
   cursor: pointer;
 }
+
+main .links li {
+  list-style-type: none;
+}
+
+main .links li a {
+  color: #f39c12;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
